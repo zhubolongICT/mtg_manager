@@ -26,7 +26,7 @@ class GridImagesDrawer(object):
         IMAGE_ROW = self.image_row_cnt        # 合成后图片一共有几行小图片
         IMAGE_COLUMN = self.image_column_cnt  # 合成后图片一共有几列小图片
 
-        margin_w = 120
+        margin_w = 128
         # (2 * margin_w + self.image_column_cnt * w) = (2 * margin_h + self.image_row_cnt * h) * self.A4_wh_ratio
         margin_h = int(((2 * margin_w + self.image_column_cnt * w) / self.A4_wh_ratio - self.image_row_cnt * h)/2)
         print(f'margin_w={margin_w}, margin_h={margin_h}')
